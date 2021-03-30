@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="action">
+            <div class="action__close">
+                <img class="action__cross" src="img/bg/cross.svg" alt="cross" onclick="closeForm()" id="cross">
+            </div>
+
+            <div class="action__header">
+                <h2 class="action__title">Member Sign In</h2>
+                <div class="action__description">
+                    <span class="action__question">Not a member yet?</span>
+                    <a class="action__link" href="#">Sign up now</a>
+                </div>
+            </div>
+
+            <form action="#" class="form">
+                <div class="form__input-content">
+                    <div class="form__logo-block">
+                        <img src="img/logo/user.svg" alt="logo">
+                    </div>
+                    <input class="form__input" type="text" placeholder="Username / Email" name="username">
+                </div>
+
+                <div class="form__input-content">
+                    <div class="form__logo-block">
+                        <img src="img/logo/password.svg" alt="logo">
+                    </div>
+                    <input class="form__input" type="password" placeholder="Password" name="password" id="password">
+                    <div class="form__password-stage" onclick="passwordVisibility()">
+                        <img class="form__password-eye" src="img/bg/closed_eye.svg" alt="closed_eye" id="closed-eye">
+                        <img class="form__password-eye invisible" src="img/bg/opened_eye.svg" alt="opened_eye" id="opened-eye">
+                    </div>
+                </div>
+                
+                <div class="form__footer">
+                    <button class="form__button" type="submit">Sign In</button>
+
+                    <div class="form__links">
+                        <div class="form__remember">
+                            <div class="form__checkbox" onclick="onClickCheckbox()" id="checkbox">
+                                <img src="img/logo/check.svg" alt="check">
+                            </div>
+                            <span>Remember me</span>
+                        </div>
+                        <a class="form__forgot" href="#">Forgot Password?</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <img class="author" src="img/logo/logo.svg" alt="logo">
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
